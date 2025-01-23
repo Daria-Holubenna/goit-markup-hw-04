@@ -1,9 +1,10 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0 auto;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -12,56 +13,71 @@ body{
     color: #434455;
     background-color: #FFFFFF;
 }
-p, h1, h2, h3, h4, h5, h6{
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
-ul{
+
+ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-img{
+
+img {
     display: block;
     max-width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.container { 
-    max-width: 1158px;
-    padding: 0 15px; 
-    margin: 0 auto;
-    }
 
-.section{
-    padding: 120px 0;
-    
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
+
+.section {
+    padding: 120px 0;
+
+}
+
 .page-header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-                0px 1px 1px rgba(46, 47, 66, 0.16),
-                0px 1px 6px rgba(46, 47, 66, 0.08);
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
- .page-header .header-container{
+
+.page-header .header-container {
     display: flex;
     align-items: center;
-} 
-.header-article{
+}
+
+.header-article {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-link{ 
-     display: flex; 
+
+.nav-link {
+    display: flex;
     gap: 40px;
     align-items: center;
 
-} 
+}
 
-.link{
+.link {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -72,11 +88,13 @@ a{
     padding: 24px 0;
 
 }
-.header-logo{
+
+.header-logo {
     margin-right: 76px;
     padding: 24px 0;
 }
-.logo{
+
+.logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -84,22 +102,26 @@ a{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-  
+
 }
-.logo-studio{
+
+.logo-studio {
     color: #2e2f42;
 }
-.contact{
+
+.contact {
     font-style: normal;
 
 }
-.contact-list{
+
+.contact-list {
     display: flex;
     align-items: center;
     gap: 40px;
-    
+
 }
-.contact .contact-mail-phone{
+
+.contact .contact-mail-phone {
     display: block;
     font-weight: 400;
     font-size: 16px;
@@ -111,27 +133,26 @@ a{
 }
 
 .link:hover,
-.link:focus{
+.link:focus {
     color: #404bbf;
 }
+
 .contact .contact-mail-phone:hover,
-.contact .contact-mail-phone:focus{
+.contact .contact-mail-phone:focus {
     color: #404bbf;
 }
 
 /* вторая секц */
 
 
-.main-theme{
+.main-theme {
     padding: 188px 0;
 
     background-color: #2e2f42;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-    ),
-    url(/images/people-office.jpg);
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(/images/people-office.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -140,7 +161,7 @@ a{
 
 }
 
-.main-title{
+.main-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 107%;
@@ -152,9 +173,10 @@ a{
 
     margin: 0 auto;
     margin-bottom: 48px;
- 
+
 }
-.main-submit{
+
+.main-submit {
     background-color: #4d5ae5;
     font-weight: 500;
     font-size: 16px;
@@ -171,8 +193,9 @@ a{
     margin: 0 auto;
 
 }
+
 .main-submit:hover,
-.main-submit:focus{
+.main-submit:focus {
     background-color: #404bbf;
 }
 
@@ -192,16 +215,28 @@ a{
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
-  .list-about{
+}
+
+.list-about {
     display: flex;
     gap: 24px;
-  }
-  .about-list-item{
+}
+
+.about-list-item {
     width: calc((100% - 72px) / 4);
-  }
-  
-.section-about-company .name-skill{
+
+}
+
+.icon-parent {
+    background-color: #F4F4FD;
+    margin-bottom: 8px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    text-align: center;
+    padding: 24px 0;
+}
+
+.section-about-company .name-skill {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -209,26 +244,28 @@ a{
     color: #2e2f42;
     margin-bottom: 8px;
 }
-.section-about-company .about-skill{
+
+.section-about-company .about-skill {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #434455;
 }
-.section-about-team{
+
+.section-about-team {
     background-color: #f4f4fd;
 }
 
 
 /* .section-about-team третя */
 
-.section-about-team{
+.section-about-team {
     background-color: #f4f4fd;
 }
 
 
-.section-name{
+.section-name {
     font-weight: 700;
     font-size: 36px;
     line-height: 111%;
@@ -241,23 +278,51 @@ a{
 }
 
 
-.team-card{
+.team-card {
     display: flex;
     gap: 24px;
     align-items: center;
 
 }
-.team-list-item{
+
+.team-list-item {
     background-color: #fff;
-    border-radius: 0px 0px 4px 4px; 
+    border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
-    
+
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
 }
-.list-item-text{
+
+.list-item-text {
     padding: 32px 0;
 
 }
-.team-card .team-name-title{
+
+/* test */
+.icon-card-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+
+.link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    fill: #F4F4FD;
+    width: 40px;
+    height: 40px;
+}
+
+/* /////////////////////////////////////// */
+
+.team-card .team-name-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -268,7 +333,8 @@ a{
     text-align: center;
 
 }
-.team-card .team-job{
+
+.team-card .team-job {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -276,13 +342,15 @@ a{
     color: #434455;
 
     text-align: center;
+
+    margin-bottom: 8px;
 }
 
 
 /* секція чотири а може й три - шось про портфоліо  */
 
 
-.portfolio-card{
+.portfolio-card {
     display: flex;
     row-gap: 48px;
     column-gap: 24px;
@@ -290,7 +358,8 @@ a{
     align-items: center;
 
 }
-.portfolio-card .portfolio-card-name{
+
+.portfolio-card .portfolio-card-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -299,21 +368,24 @@ a{
 
     margin-bottom: 8px;
 }
-.portfolio-card .portfolio-card-descript{
+
+.portfolio-card .portfolio-card-descript {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #434455;
 }
-.portfolio-card .card{
+
+.portfolio-card .card {
 
     width: calc((100% - 48px) / 3);
 
 }
-.card-item{
+
+.card-item {
     padding: 32px 16px;
-    border: 1px solid #e7e9fc; 
-    border-top: none; 
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 
@@ -321,24 +393,27 @@ a{
 /* футерсько-подвальне начало */
 
 
-.footer-copyright{
+.footer-copyright {
     background-color: #2e2f42;
 
     padding: 100px 0;
 }
-.container-footer{
+
+.container-footer {
     display: block;
 
 }
-.logo-footer{
+
+.logo-footer {
     color: #f4f4fd;
 }
-.last-logo{
+
+.last-logo {
     display: inline-block;
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
 }
 
-.footer-copyright .footer-descr{
+.footer-copyright .footer-descr {
     font-size: 16px;
     line-height: 150%;
     color: #f4f4fd;
@@ -346,4 +421,5 @@ a{
     width: 264px;
 
 }
+
 /* проверка или аботае гит  */
