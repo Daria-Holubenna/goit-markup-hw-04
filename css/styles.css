@@ -113,6 +113,7 @@ a {
 
 .underline {
     position: relative;
+    color: #404bbf;
 }
 
 .underline::after {
